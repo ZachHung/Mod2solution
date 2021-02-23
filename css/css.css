@@ -1,0 +1,117 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+  }
+  h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 175%;
+  }
+  p {
+    /*background-color: grey;
+    width: 90%;
+    height: 200px;*/
+    font-family: Helvetica;
+    color:black;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .name1, .name2, .name3 {
+    font-size: 125%;
+   position: relative;
+   width: 100px;
+   height: 25px;
+   border:black solid 3px;
+   text-align: center;
+   top:0px;
+   right:0%;
+   margin-top: 0px;
+   margin-left: auto;
+   margin-bottom: 0px;
+  }
+ .name1 {
+    background-color: rgba(255, 192, 203, 0.692);
+}
+ .name2 {
+    background-color: maroon;
+}
+ .name3 {
+   background-color: yellow;
+ }
+  .content {
+      text-align: center;
+      padding: 0px 15px;
+  }
+  
+  /* Simple Responsive Framework. */
+  .row {
+    width: 100%;
+  }
+  
+  /********** Large devices only **********/
+  @media (min-width: 992px) {
+   .col-lg-4, .col-lg-6, .col-lg-12 {
+      float: left;
+      position:relative;
+      overflow: hidden;
+      height: 230px;
+      background-color: gray;
+      margin-left: 0.33% ;
+      border: black 3px solid;
+
+  }
+    .col-lg-4 {
+      width: 33%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+      .col-md-4, .col-md-6, .col-md-12 {
+        float: left;
+        position:relative;
+        overflow: hidden;
+        height: 200px;
+        background-color: gray;
+        margin-left: 0.33% ;
+        margin-top: 5px; 
+        border: black 3px solid;
+      }
+    .col-md-4 {
+      width: 33%;
+    }
+    .col-md-6 {
+      width: 49.5%;
+    }
+    .col-md-12 {
+      width: 99%;
+    }
+  }
+  
+  /********** small devices only **********/
+  @media (max-width: 767px) {
+    .col-sm-4, .col-sm-6, .col-sm-12 {
+      float: left;
+      position:relative;
+      overflow: hidden;
+      height: 180px;
+      background-color: gray;
+      margin-top:5px ; 
+      border: black 3px solid;
+    }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
